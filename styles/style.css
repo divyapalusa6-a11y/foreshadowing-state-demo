@@ -16,5 +16,61 @@ body {
     rgb(117, 210, 201),
     rgb(101, 207, 203),
     rgb(86, 204, 204)
+  ); 
+  text-align: center;
+  padding: 20px;
+  transition: background 0.5s, color 0.5s;
+
+}
+
+
+
+/* Light Theme */
+
+.light-theme {
+  color: #4b2e19;
+  background: linear-gradient(
+    to bottom,
+    #fff4d6,
+    #ead8b5,
+    #d9c49a
   );
+}
+
+/* Dark Theme */
+
+.dark-theme {
+  color: #f5e6ff;
+  background: linear-gradient(
+    to bottom,
+    #171329,
+    #30234c,
+    #49345f
+  );
+}
+
+/* Buttons */
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  border: 2px solid #9b783d;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Crab container */
+
+#crabContainer {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+#crabCount {
+  font-size: 22px;
 }
