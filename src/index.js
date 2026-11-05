@@ -1,17 +1,17 @@
 const state = {
-  crabCount: 0
+  elephantCount: 0
 };
 
-const addCrab = (event) => {
-  const newCrab = document.createElement('span');
-  const crabContainer = document.querySelector('#crabContainer');
-  newCrab.textContent = '🦀';
-  crabContainer.appendChild(newCrab);
+const addElephant = (event) => {
+  const newElephant = document.createElement('span');
+  const elephantContainer = document.querySelector('#elephantContainer');
+  newElephant.textContent = '🐘';
+  elephantContainer.appendChild(newElephant);
 
-  // Crab Count Behavior
-  state.crabCount += 1;
-  const crabCountContainer = document.querySelector('#crabCount');
-  crabCountContainer.textContent = `Crab Count: ${state.crabCount}`;
+  // Elephant Count Behavior
+  state.elephantCount += 1;
+  const elephantCountContainer = document.querySelector('#elephantCount');
+  elephantCountContainer.textContent = `Elephant Count: ${state.elephantCount}`;
 };
 // Light Mode Behavior
 const turnOnLightMode = (event) => {
@@ -26,8 +26,8 @@ const turnOnDarkMode = (event) => {
 };
 
 const registerEventHandlers = (event) => {
-  const crabButton = document.querySelector('#addCrabButton');
-  crabButton.addEventListener('click', addCrab);
+  const elephantButton = document.querySelector('#addElephantButton');
+  elephantButton.addEventListener('click', addElephant);
 
   const lightThemeButton = document.querySelector('#lightThemeButton');
   lightThemeButton.addEventListener('click', turnOnLightMode);
