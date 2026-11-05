@@ -1,5 +1,5 @@
 const state = {
-  elephantCount: 0
+  elephantCount : 0
 };
 
 const addElephant = (event) => {
